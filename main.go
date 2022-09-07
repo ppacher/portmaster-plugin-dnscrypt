@@ -98,11 +98,14 @@ func getResolverInfo(server string) {
 	// Fetching and validating the server certificate
 	info, err := client.Dial(server)
 	if err != nil {
-		framework.Notify().CreateNotification(framework.Context(), &proto.Notification{
+        err = framework.Notify().CreateNotification(framework.Context(), &proto.Notification{
 			EventId: "dnscrypt-invalid-stamp",
 			Title:   "DNSCrypt: Server Stamp invalid",
 			Message: err.Error(),
 		})
+        if err != nil {
+		    hclog.L().Error("failed to create notification", "error", err)
+        }
 
 		return
 	}
