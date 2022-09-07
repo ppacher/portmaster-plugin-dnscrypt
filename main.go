@@ -153,9 +153,12 @@ func main() {
 	rootCmd := &cobra.Command{
 		Use: "portmaster-plugin-dnscrypt",
 		Run: func(cmd *cobra.Command, args []string) {
-			framework.RegisterResolver(
+            err := framework.RegisterResolver(
 				framework.ResolverFunc(resolve),
 			)
+            if err != nil {
+                panic(err)
+            }
 
 			framework.OnInit(func(ctx context.Context) error {
 				if err := setupAndWatchConfig(ctx); err != nil {
