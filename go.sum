@@ -97,6 +97,8 @@ github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6L
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/safing/portmaster v0.9.5 h1:oWnBPK07c7DguuUdS3ieFymI0ZeeNBsHlCtD+CC0eZI=
 github.com/safing/portmaster v0.9.5/go.mod h1:DveoBDdsqtZcJR0X7MwgWsdNIBgloUU36/p7ZgaB3t0=
+github.com/safing/portmaster v0.9.6-0.20220906121621-41310b8d5c42 h1:w4i23OmZ4/nGJfKok1REbTQzfo4n1nVF7xn/8OTpuCE=
+github.com/safing/portmaster v0.9.6-0.20220906121621-41310b8d5c42/go.mod h1:NTOxx8D5qBDKf4RFWAX1MIN0SOCkA3frsV91509dn5A=
 github.com/spf13/cobra v1.5.0 h1:X+jTBEBqF0bHN+9cSMgmfuvv2VHJ9ezmFNf9Y/XstYU=
 github.com/spf13/cobra v1.5.0/go.mod h1:dWXEIy2H428czQCjInthrTRUg7yKbok+2Qi/yBIJoUM=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=

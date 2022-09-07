@@ -5,7 +5,8 @@ go 1.19
 require (
 	github.com/ameshkov/dnscrypt/v2 v2.2.5
 	github.com/hashicorp/go-hclog v1.3.0
-	github.com/safing/portmaster v0.9.5
+	github.com/miekg/dns v1.1.50
+	github.com/safing/portmaster v0.9.6-0.20220906121621-41310b8d5c42
 	github.com/spf13/cobra v1.5.0
 )
 
@@ -21,7 +22,6 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
-	github.com/miekg/dns v1.1.50 // indirect
 	github.com/mitchellh/go-testing-interface v1.0.0 // indirect
 	github.com/oklog/run v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
@@ -35,5 +35,3 @@ require (
 	google.golang.org/grpc v1.42.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 )
-
-replace github.com/safing/portmaster => ../../safing/portmaster
