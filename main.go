@@ -98,7 +98,7 @@ func getResolverInfo(server string) {
 	// Fetching and validating the server certificate
 	info, err := client.Dial(server)
 	if err != nil {
-        err = framework.Notify().CreateNotification(framework.Context(), &proto.Notification{
+        _, err := framework.Notify().CreateNotification(framework.Context(), &proto.Notification{
 			EventId: "dnscrypt-invalid-stamp",
 			Title:   "DNSCrypt: Server Stamp invalid",
 			Message: err.Error(),
